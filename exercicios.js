@@ -90,8 +90,24 @@ const PontosMaximum = 12;
 
 /**************************************************************************************/
 
+// exibir na tela se o número for par ou ímpar
+// uso da expressão valor % 2 === 0 para saber se é par, caso contrário, impar
+
+exibirTipo()
+
 function exibirTipo(valor){
     if(valor % 2 === 0)
-    console.log('Par')
-    else(console.log('Impar'))
+    console.log(valor+' Par')
+    else(console.log(valor+' Impar'))
+}
+
+
+// outra forma de fazer é mostrando todos os valores no console até chegar no indicado, ex:
+
+function TipoDoNumero(valorNumero){
+    for (let i = 0; i <= valorNumero; i++){
+        if(i % 2 === 0)
+            console.log(i+' Par')
+        else(console.log(i+' Impar'))
+    }
 }
