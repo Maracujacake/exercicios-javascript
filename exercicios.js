@@ -89,3 +89,9 @@ const PontosMaximum = 12;
 }
 
 /**************************************************************************************/
+
+function exibirTipo(valor){
+    if(valor % 2 === 0)
+    console.log('Par')
+    else(console.log('Impar'))
+}
