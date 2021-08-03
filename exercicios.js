@@ -111,3 +111,23 @@ function TipoDoNumero(valorNumero){
         else(console.log(i+' Impar'))
     }
 }
+
+/**************************************************************************************/
+
+// como pegar somente a propriedade de um único tipo dentro de um objeto
+// caso aconteça de receber o erro 'propriedade não foi definida ' continue tentando, é só uma dica, rs
+
+
+const filme = {
+  título : 'Vingadores',
+  ano : 2018,
+  diretor : 'Robin',
+  personagem : 'Thor'
+}
+
+exibirPropriedades(filme);
+function exibirPropriedades(obj) {
+  for (prop in obj)
+    if(typeof obj[prop] === 'string') // obj[prop] é importante para a definição não ser apenas no objeto e sim na propriedade dentro dela
+      console.log(prop+': '+obj[prop])
+}
