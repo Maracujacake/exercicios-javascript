@@ -180,3 +180,25 @@ function mediaDoAluno(notas){
     return 'A'
 }
 
+// outra forma mais clean de escrever o código seria não deixando tudo em uma única função
+
+function mediaAleatoria(valorrr){
+    const media = CalcularMedia(valorrr) // colocar o parametro 
+    if(media < 59) return 'F'
+    if(media < 69) return 'D'
+    if(media < 79) return 'C'
+    if(media < 89) return 'B'
+    return 'A'
+
+}
+
+function CalcularMedia(valoress){
+    let soma = 0;
+    for(valor of valoress){
+        soma += valor
+    }
+
+    return soma/valoress.length
+}
+
+/**************************************************************************************/
