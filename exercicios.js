@@ -131,3 +131,52 @@ function exibirPropriedades(obj) {
     if(typeof obj[prop] === 'string') // obj[prop] é importante para a definição não ser apenas no objeto e sim na propriedade dentro dela
       console.log(prop+': '+obj[prop])
 }
+
+
+/**************************************************************************************/
+
+// função para somar apenas os múltiplos de 3 e 5;
+// o operador += foi usado para o valor não ser apenas reescrito
+// a lógica é a mesma da função em que vemos se o número é par ou ímpar
+
+somar(10)
+function somar(nlimite){
+    let multiplosDe3 = 0;
+    let multiplosDe5 = 0;
+    
+    for(i = 0; i <= nlimite; i++){
+        if(i % 3 === 0)
+        multiplosDe3 += i;
+        
+        if(i % 5 === 0)
+        multiplosDe5 += i;
+    }
+    
+    console.log(multiplosDe3 + multiplosDe5)
+    
+}
+
+/**************************************************************************************/
+
+// função para exibir a média das notas de um aluno
+// returns feitos de forma clean ao invés de fazer algo do tipo if media > 0 && media < 59;
+// caso não satisfaça a primeira lei do 'if', tentará a segunda, até chegar a uma que dê resultado
+
+const array = [80,80,90]
+console.log(mediaDoAluno(array))
+
+function mediaDoAluno(notas){
+    let soma = 0;
+    for(nota of notas){
+        soma += nota;
+    }
+
+    const media = soma/(notas.length)
+
+    if(media < 59) return 'F'
+    if(media < 69) return 'D'
+    if(media < 79) return 'C'
+    if(media < 89) return 'B'
+    return 'A'
+}
+
