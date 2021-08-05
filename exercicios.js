@@ -233,3 +233,22 @@ function MostrarAsterisco(numeroaleatorio){
 
 /**************************************************************************************/
 
+// função para exibir somente numeros primos dentro de um limite
+// usando loop nested
+
+
+ExibirSomenteOsPrimos(20)
+function ExibirSomenteOsPrimos(numerolimite){
+    for(let numerorandom = 2; numerorandom <= numerolimite; numerorandom++){
+        let EhPrimo = true;
+
+        for(let divisor =2; divisor < numerorandom; divisor++){
+            if(numerorandom % divisor === 0){
+                EhPrimo = false;
+                break;
+            }
+        }  if(EhPrimo) console.log(numerorandom)
+    }
+}
+
+/**************************************************************************************/
