@@ -271,4 +271,8 @@ function EhPrimoMesmo(numbersito){
     } return true;
 }
 
+// removido o break pois não é dentro do loop que ele será feito
+// removido as variaveis pois é uma função que pode ser reutilizada ou seja apenas retornar é melhor
+// chamar a função no lugar do que era as variaveis levando um numero como parametro; neste caso numbersito
+
 /**************************************************************************************/
