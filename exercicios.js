@@ -202,3 +202,18 @@ function CalcularMedia(valoress){
 }
 
 /**************************************************************************************/
+
+// exercício para fixação de nested loop
+// loops dentro de loops
+// mostrar o número de asteriscos na tela(ex) de acordo com o valor escolhido
+
+MostrarEstrelinha(2)
+
+function MostrarEstrelinha(numeroescolhido){
+    let ndefault = ''
+    for(let numberEx = 1; numberEx <= numeroescolhido; numberEx++){
+        ndefault += '*'
+        console.log(ndefault)
+    }
+}
+
