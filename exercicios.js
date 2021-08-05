@@ -251,4 +251,24 @@ function ExibirSomenteOsPrimos(numerolimite){
     }
 }
 
+
+// uma forma refatorada da função, seja para maior otimização ou para maior organização do código é:
+
+ExibirLosPrimitos(12)
+function ExibirLosPrimitos(limitastico){
+    for(numbersito = 2; numbersito <= limitastico; numbersito++){
+
+        if(EhPrimoMesmo(numbersito)) console.log(numbersito)
+    }
+}
+
+
+function EhPrimoMesmo(numbersito){
+    for(let divisorito = 2; divisorito < numbersito; divisorito++){
+        if(numbersito % divisorito === 0){
+            return false;
+        }
+    } return true;
+}
+
 /**************************************************************************************/
