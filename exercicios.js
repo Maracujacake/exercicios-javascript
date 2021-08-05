@@ -217,3 +217,19 @@ function MostrarEstrelinha(numeroescolhido){
     }
 }
 
+// agora usando o loop nested:
+
+MostrarAsterisco(12)
+
+function MostrarAsterisco(numeroaleatorio){
+    for(let numeroEx2 = 1; numeroEx2 <= numeroaleatorio; numeroEx2++){
+        let padrao = '';
+            for(let i = 0; i < numeroEx2; i++){
+                padrao += '*'
+            }
+            console.log(padrao)
+    }
+}
+
+/**************************************************************************************/
+
