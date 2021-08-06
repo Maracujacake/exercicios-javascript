@@ -276,3 +276,25 @@ function EhPrimoMesmo(numbersito){
 // chamar a função no lugar do que era as variaveis levando um numero como parametro; neste caso numbersito
 
 /**************************************************************************************/
+
+// factory function
+// utilizada para quando há muitos objetos a serem criados ou mostrado na tela
+
+function criarCarro(marca,motor,traçao){
+    return{
+        marca,
+        motor,
+        traçao,
+
+        construindoCarro(){
+            console.log('construindoCarro')
+        }
+    }
+}
+
+const Carro1 = criarCarro('Wolksvagen', '1.6', '4x4');
+const Carro2 = criarCarro('Ford', '2.0', '4x4');
+
+// para que não seja necessário repetir uma mesma função inúmeras vezes
+
+/**************************************************************************************/
