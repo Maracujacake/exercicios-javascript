@@ -298,3 +298,21 @@ const Carro2 = criarCarro('Ford', '2.0', '4x4');
 // para que não seja necessário repetir uma mesma função inúmeras vezes
 
 /**************************************************************************************/
+
+// constructor function
+// realiza a mesma função da factory function porém de uma forma diferente
+// procurar usar somente uma forma no código para não emaranhar tudo..
+
+function carrito(marca, motor, traçao){
+    this.marca = marca,
+    this.motor = motor,
+    this.traçao = traçao,
+    this.construindoCarro = function(){
+        console.log('construindo carro..')
+    }
+}
+
+const carro1 = new carrito('wolks', '1.6', '4x4');
+console.log(carro1);
+
+/**************************************************************************************/
