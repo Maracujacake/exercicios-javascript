@@ -316,3 +316,34 @@ const carro1 = new carrito('wolks', '1.6', '4x4');
 console.log(carro1);
 
 /**************************************************************************************/
+
+// clonagem de objetos; para não repitir um mesmo código inteiro somente para ter dois objetos iguais
+
+//1° criar um objeto
+
+const lampada = {
+    tipo : 'tubo',
+    duraçao : '10 anos',
+    preço : '20 reais'
+}
+
+const novaLampada = Object.assign({
+    qualquerOutraPropriedade : 'QualquerOutroValor'
+}, lampada)
+
+console.log(novaLampada)
+
+// outra forma mais rápida de clonar objetos é usando o spread '{...}', porém limita a forma como podemos
+// adicionar qualquer outra propriedade posteriormente
+
+const lampada2 = {
+    tipo : 'fluorescente',
+    duraçao : '20 anos',
+    preço : '30 reais'
+}
+
+const novaLampada2 = {...lampada2} // mesmo resultado do método acima porém mais limitado, no entanto também mais rapido
+console.log(novaLampada2)
+
+/**************************************************************************************/
+
