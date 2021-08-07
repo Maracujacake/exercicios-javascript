@@ -347,3 +347,15 @@ console.log(novaLampada2)
 
 /**************************************************************************************/
 
+// fazer um texto com template literal strings usando a interpolação de uma constante/variável
+// interpolação = ${const/var}
+
+let nome = 'algumNome'
+const minhaMensagemLiteral = 
+`Olá, ${nome}!
+
+Fiquei muito feliz em saber que você está
+lendo minha 'mensagem'! Responda assim que
+possível
+`
+console.log(minhaMensagemLiteral)
