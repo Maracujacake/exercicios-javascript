@@ -420,3 +420,33 @@ function Chocolate(sabor, recheio, quantidade){
   
   console.log(EspacoNaMemoria(Chocolate1, Chocolate2))
 
+  // outro exemplo com false na primeira função e true na segunda
+
+  function EnderecoX(Rua,Cidade,Cep){
+      this.Rua = Rua,
+      this.Cidade = Cidade,
+      this.Cep = Cep
+  }
+
+  const EnderecoA = new EnderecoX('A','B','C');
+  const EnderecoB = new EnderecoX('B','B','C');
+  const EnderecoC = EnderecoA;
+
+  function saoIguais2(EnderecoA, EnderecoB){
+    return EnderecoA.Rua === EnderecoB.Rua &&
+    EnderecoA.Cidade === EnderecoB.Cidade &&
+    EnderecoA.Cep === EnderecoB.Cep
+  }
+
+  console.log(saoIguais2(EnderecoA, EnderecoB))
+  // false pois os elementos são diferentes, neste caso apenas o Endereco.Rua [ caso estivesse sob pipe e nao &&]...
+  //... mostraria true
+
+  function OcupamMesmoLocal(EnderecoA, EnderecoC){
+      return EnderecoA === EnderecoC
+  }
+
+  console.log(OcupamMesmoLocal(EnderecoA, EnderecoC));
+  // true, pois são identicos e ocupam o mesmo local, apontam para o mesmo local
+
+  /**************************************************************************************/
