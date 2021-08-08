@@ -372,3 +372,21 @@ console.log(data1+' , '+data2+' , '+data3);
 
 /**************************************************************************************/
 
+// criação de uma função para exibir endereços selecionados
+// 1° criar um objeto com as informações do endereço
+
+let Endereço1 = {
+    Rua: 'ExemploRua',
+    Cidade: 'ExemploCidade',
+    Cep: 'ExemploCep'
+};
+
+function ExibirEndereço(Endereço1){
+    for(let Informaçao in Endereço1){
+        console.log(Informaçao, ':', Endereço1[Informaçao])
+    }
+}
+
+ExibirEndereço(Endereço1);
+
+/**************************************************************************************/
