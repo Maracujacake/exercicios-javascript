@@ -393,3 +393,19 @@ ExibirEndereço(Endereço1);
 
 // criaçao de uma função para comparar objetos
 // se são iguais / diferentes / etc
+
+function Endereco(rua,cidade,cep){
+    this.rua = rua,
+    this.cidade = cidade,
+    this.cep = cep
+  }
+  const endereco1 = new Endereco('a','b','c')
+  const endereco2 = new Endereco('a','b','c')
+  
+  function TiposIguais(endereco1, endereco2){
+    if(typeof endereco1 === endereco2)
+    return true;
+    else return false;
+  }
+  
+  console.log(TiposIguais(endereco1, endereco2))
