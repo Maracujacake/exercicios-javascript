@@ -359,3 +359,16 @@ lendo minha 'mensagem'! Responda assim que
 possível
 `
 console.log(minhaMensagemLiteral)
+
+/**************************************************************************************/
+
+// criação de uma data ( neste caso do dia atual ), mostrando-a em 3 formatos diferentes 
+
+let data1 = new Date();
+let data2 = new Date('August, 08, 2021');
+let data3 = new Date(2021,07,08,11,30);
+
+console.log(data1+' , '+data2+' , '+data3);
+
+/**************************************************************************************/
+
