@@ -390,3 +390,6 @@ function ExibirEndereço(Endereço1){
 ExibirEndereço(Endereço1);
 
 /**************************************************************************************/
+
+// criaçao de uma função para comparar objetos
+// se são iguais / diferentes / etc
