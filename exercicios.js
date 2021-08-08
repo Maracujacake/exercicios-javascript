@@ -394,18 +394,29 @@ ExibirEndereço(Endereço1);
 // criaçao de uma função para comparar objetos
 // se são iguais / diferentes / etc
 
-function Endereco(rua,cidade,cep){
-    this.rua = rua,
-    this.cidade = cidade,
-    this.cep = cep
-  }
-  const endereco1 = new Endereco('a','b','c')
-  const endereco2 = new Endereco('a','b','c')
-  
-  function TiposIguais(endereco1, endereco2){
-    if(typeof endereco1 === endereco2)
-    return true;
-    else return false;
+function Chocolate(sabor, recheio, quantidade){
+    this.sabor = sabor,
+    this.recheio = recheio,
+    this.quantidade = quantidade
   }
   
-  console.log(TiposIguais(endereco1, endereco2))
+  const Chocolate1 = new Chocolate('morango', 'chocolate', '42');
+  const Chocolate2 = new Chocolate('morango', 'chocolate', '42');
+  
+  function saoIguais(Chocolate1, Chocolate2){
+    return Chocolate1.sabor === Chocolate2.sabor && 
+    Chocolate1.recheio === Chocolate2.recheio &&
+    Chocolate1.quantidade === Chocolate2.quantidade
+  }
+  
+  console.log(saoIguais(Chocolate1, Chocolate2))
+  
+
+    // a proxima função é para ver se estão alocados no mesmo local da memória
+
+  function EspacoNaMemoria(Chocolate1, Chocolate2){
+      return Chocolate1 === Chocolate2
+  }
+  
+  console.log(EspacoNaMemoria(Chocolate1, Chocolate2))
+
