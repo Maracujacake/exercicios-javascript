@@ -497,7 +497,7 @@ function Chocolate(sabor, recheio, quantidade){
   // criacao de um array com faixas de preços, assim como os utilizados em grandes sites de venda ( de forma simplificada )
   // criar ele em : objeto simples, constructor function e factory function, nesta ordem.
 
-  //criação em objeto simples:
+    //criação em objeto simples:
 
     let faixa1 = [
         {tooltip: 'Até 400 reais', minimo: '0', maximo: '400'},
@@ -505,4 +505,20 @@ function Chocolate(sabor, recheio, quantidade){
         {tooltip: 'acima de 800 reais', minimo: '800', maximo: '15151515'}
     ]
 
+    // criaçao em factory function
+
+    function criarFaixaPreco(tooltip, minimo, maximo){
+        return{
+            tooltip,
+            minimo,
+            maximo
+        }
+    }
+
+    let faixa2 = [
+        criarFaixaPreco('Até 400 reais', '0', '400'),
+        criarFaixaPreco('Entre 400 e 800 reais', '400', '800'),
+        criarFaixaPreco('acima de 800 reais', '800', '84816515')
+    ]
     
+    //criaçao
