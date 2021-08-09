@@ -449,4 +449,26 @@ function Chocolate(sabor, recheio, quantidade){
   console.log(OcupamMesmoLocal(EnderecoA, EnderecoC));
   // true, pois são identicos e ocupam o mesmo local, apontam para o mesmo local
 
+
   /**************************************************************************************/
+
+
+  //criaçao de um objeto para postagem em um blog ( apenas um exemplo )
+
+  let postagemExemplo = {
+    autor: 'autorExemplo',
+    titulo: 'tituloExemplo',
+    mensagem: 'mensagemExemplo',
+    comentarios: [
+        {autorComentario: 'a', mensagem: 'b'},
+        {autorComentario: 'b', mensagem: 'c'}
+    ],
+    estaAoVivo : true
+  }
+
+  console.log(postagem);
+
+
+  /**************************************************************************************/
+
+  
