@@ -471,4 +471,25 @@ function Chocolate(sabor, recheio, quantidade){
 
   /**************************************************************************************/
 
+  // criação de um objeto porém desta vez com uma -FUNÇÃO CONSTRUTORA- ( por convenção sempre nomear com maiscula )
+  // criar duas para teste
+
+  function PostagemA(autor,titulo,mensagem){
+    this.autor = autor,
+    this.titulo = titulo,
+    this.mensagem = mensagem
+  }
+
+  let Postagem1 = new PostagemA('autorA','TituloA','MensagemA');
+
+  // segundo objeto
+
+  function PostagemB(AutorB,TituloB,MensagemB){
+      this.AutorB = AutorB,
+      this.TituloB = TituloB,
+      this.MensagemB = MensagemB
+  }
+
+  let Postagem2 = new PostagemB('AutorBB','TituloBB','MensagemBB');
   
+/**************************************************************************************/
