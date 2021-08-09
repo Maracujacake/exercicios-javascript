@@ -493,3 +493,6 @@ function Chocolate(sabor, recheio, quantidade){
   let Postagem2 = new PostagemB('AutorBB','TituloBB','MensagemBB');
   
 /**************************************************************************************/
+
+  // criacao de um array com faixas de preços, assim como os utilizados em grandes sites de venda ( de forma simplificada )
+  // criar ele em : objeto simples, constructor function e factory function, nesta ordem.
