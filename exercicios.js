@@ -520,5 +520,21 @@ function Chocolate(sabor, recheio, quantidade){
         criarFaixaPreco('Entre 400 e 800 reais', '400', '800'),
         criarFaixaPreco('acima de 800 reais', '800', '84816515')
     ]
-    
-    //criaçao
+
+    //criaçao em constructor function
+
+    function criarFaixaPreco2(tooltip, minimo, maximo){
+        this.tooltip = tooltip,
+        this.minimo = minimo,
+        this.maximo = maximo
+    }
+
+    let faixa3 = [
+        new criarFaixaPreco2('Até 400 reais', '0', '400'),
+        new criarFaixaPreco2('Entre 400 e 800 reais', '400' ,'800'),
+        new criarFaixaPreco2('acima de 800 reais', '800', '10000505')
+    ];
+
+    //console.log em todas as faixas
+
+    /**************************************************************************************/
