@@ -23,3 +23,19 @@
 
     muitoselementos.includes('abc'); // retorna um true se existir dentro do array e um false caso não exista
 
+    /**************************************************************************************/
+
+    // Achar elementos dentro de um array de objetos ou dentro de um objeto 
+
+    const carros = [
+        {marca: 'wolksvagen', motor: '1.6v'},
+        {marca: 'peugeot', motor: '2.0v'},
+        {marca: 'ferrari', motor: '2.5v'}
+    ];
+
+    const acharCarros = carros.find(function(Carros){
+        return Carros.marca === 'wolksvagen'
+    });
+    console.log(acharCarros);
+
+    /**************************************************************************************/
