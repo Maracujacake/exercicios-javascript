@@ -66,3 +66,29 @@
     exemplodenumerosaleatorios.pop(); // remove o ultimo numero
     exemplodenumerosaleatorios.unshift(); // remove o primeiro numero
     exemplodenumerosaleatorios.splice(3,1); // remove o numero quatro pois está no 3° indice
+
+/**************************************************************************************/
+
+
+    // apagando elementos de um array
+
+   /* let aleatoriedade = ['a', 1, 'b', 2, 'c'];
+    let xubs = aleatoriedade;
+
+    aleatoriedade = [];
+    console.log(xubs) */
+
+    // nao apaga as referencias
+    //******************************************* */
+    let aleatoriedade = ['a', 1, 'b', 2, 'c'];
+    let xubs = aleatoriedade;
+
+    aleatoriedade.length = 0;
+    console.log(xubs)
+
+    // melhor metodo 
+
+    /************************************************ */
+
+    
+/**************************************************************************************/
