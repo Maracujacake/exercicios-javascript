@@ -51,3 +51,18 @@
 
     numerosta.find( (acharnumero) => acharnumero.id === 1 )
     // ao dar console.log, vai mostrar o numero1
+
+
+    /**************************************************************************************/
+
+    // remover elementos de um array;
+    // tres propriedades
+    // pop
+    // shift
+    // splice (de novo);
+
+    const exemplodenumerosaleatorios = [1,2,3,4,5,6];
+
+    exemplodenumerosaleatorios.pop(); // remove o ultimo numero
+    exemplodenumerosaleatorios.unshift(); // remove o primeiro numero
+    exemplodenumerosaleatorios.splice(3,1); // remove o numero quatro pois está no 3° indice
