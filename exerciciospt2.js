@@ -39,3 +39,15 @@
     console.log(acharCarros);
 
     /**************************************************************************************/
+
+    // arrow function
+
+    // ao invés da palavra function utilizamos ' => ' ; já conta com o return
+
+    const numerosta = [
+        {id: 1, nome:'numero1'},
+        {id: 2, nome:'numero2'}
+    ]
+
+    numerosta.find( (acharnumero) => acharnumero.id === 1 )
+    // ao dar console.log, vai mostrar o numero1
