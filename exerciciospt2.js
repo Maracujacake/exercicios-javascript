@@ -92,3 +92,16 @@
 
     
 /**************************************************************************************/
+
+    // juntando e separando arrays
+
+    // Concat( ) e Slice( )
+
+    let alfabetismo = ['a','b','c'];
+    let alfabetismo2 = ['d','e','f'];
+
+    const juntarOsDois = alfabetismo.concat(alfabetismo2);
+
+    juntarOsDois.slice(8);
+
+/**************************************************************************************/
