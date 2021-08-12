@@ -117,3 +117,19 @@ const concatenando = [...bolos1,...bolos2];
 const concatenando2 = [...bolos1,'escrevendo',...bolos2];
 
 /**************************************************************************************/
+
+//forEach [substituindo o for of];
+
+const nomes = ['Pedro','Joao','Gabriel','Julia','Luiza'];
+
+/*nomes.forEach(function(nome){
+    console.log(nome)
+})*/
+
+// melhor prática seria usar com a arrow function:
+
+nomes.forEach(nome =>{
+    console.log(nome)
+});
+
+/**************************************************************************************/
