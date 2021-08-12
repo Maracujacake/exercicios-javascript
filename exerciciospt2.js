@@ -150,3 +150,19 @@ const splitando = fraseDeComida.split(' ');
 // depois de cada espaço, ou seja ' ', o código vai ser quebrado, isolando assim cada palavra
 
 
+/**************************************************************************************/
+
+// utilizando o prompt
+// prompt é uma caixa de texto onde o usuário coloca um valor e dependendo do valor podemos fazer algo
+// ex: 
+
+const idade = prompt('Qual a sua idade?')
+
+if(idade < 18){
+  console.log('Menor de idade')
+}
+else{
+  console.log('maior de idade')
+}
+
+// sempre armazenar o prompt dentro de uma constante ou variável para poder ser utilizada depois
