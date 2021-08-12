@@ -133,3 +133,20 @@ nomes.forEach(nome =>{
 });
 
 /**************************************************************************************/
+
+// split e join ( manipular entre as palavras ) 
+
+// join serve para adicionar algo entre todos os elementos
+//ex:
+
+const animais = ['zebra','leao','papagaio','carrapato','cachorro'];
+const join = animais.join('-')
+// todas as palavras serão espaçadas por um -
+
+// split serve para separar as palavras em certo elemento, por exemplo
+
+const fraseDeComida = 'Eu gosto muito de sopa, hmmm... Uma sopa quentinha cairia bem';
+const splitando = fraseDeComida.split(' ');
+// depois de cada espaço, ou seja ' ', o código vai ser quebrado, isolando assim cada palavra
+
+
