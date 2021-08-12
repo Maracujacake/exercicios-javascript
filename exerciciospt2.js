@@ -166,3 +166,16 @@ else{
 }
 
 // sempre armazenar o prompt dentro de uma constante ou variável para poder ser utilizada depois
+
+/**************************************************************************************/    
+
+// teste para alterar o DOM do HTML 
+
+// 1° document.   { isso quer dizer que voce está escolhendo o documento inteiro do html }
+// 2° document.getElementById('') ou document.getElementByClassName('')  {aqui voce pegará o elemento que quer alterar pelo seu id ou pela sua classe ENTRE ''}
+// 3° document.getElementById('elemento').innerText ou document.getElementById('elemento').value ou document.getElementById('elemento').InnerHTML
+// ou document.getElementById('elemento').click(); ENFIM, depois de voce selecionar o elemento, colocará um ponto e escreverá o que voce quer fazer com ele
+// para alterar texto por exemplo: 
+// document.getElementById('elemento').innerText = 'texto' [caso não funcione testar o innerHTML e o value E TALVEZ COLOCAR O INDICE [0] após o nome do elemento(fora das chaves)]
+
+/**************************************************************************************/
