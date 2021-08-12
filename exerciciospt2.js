@@ -179,3 +179,19 @@ else{
 // document.getElementById('elemento').innerText = 'texto' [caso não funcione testar o innerHTML e o value E TALVEZ COLOCAR O INDICE [0] após o nome do elemento(fora das chaves)]
 
 /**************************************************************************************/
+
+// Sistema de segurança 
+// ULTIMO EXERCICIO CURSO JAVASCRIPT
+
+function VerificarEntrada(){
+    nomeConvidado = document.getElementById('nomeConvidado').value;
+    convidadosChris = ['Amanda','Paul','Zepp','DrGordon','Adam'];
+
+    if(convidadosChris.includes(nomeConvidado)){
+        document.getElementById('PermissaoDeEntrada').innerText = 'Voce Pode Entrar'
+    }
+    else{
+        document.getElementById('PermissaoDeEntrada').innerText = 'Voce NAO Pode Entrar'
+    }
+}
+
