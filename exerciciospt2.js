@@ -106,3 +106,14 @@
 
 /**************************************************************************************/
 
+// nova forma de clonar e concatenar arrays do ecmascript 6
+// operador spread
+
+const bolos1 = ['bolo1','bolo2','bolo3'];
+const bolos2 = ['bolo4','bolo5','bolo6'];
+
+const concatenando = [...bolos1,...bolos2];
+// pode-se escrever dentro do novo array gerado, ex:
+const concatenando2 = [...bolos1,'escrevendo',...bolos2];
+
+/**************************************************************************************/
