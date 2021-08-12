@@ -195,3 +195,27 @@ function VerificarEntrada(){
     }
 }
 
+// forma mais otimizada nao encarregando uma function de tudo
+
+function VerificarEntrada(){
+    nomeConvidado = document.getElementById('nomeConvidado').value;
+    ConvidadoChris = ['Amanda','Paul','Zepp','DrGordon','Adam'];
+
+    if(ConvidadoChris.includes(nomeConvidado)){
+        podeEntrar();
+    }
+    else{
+        NAOpodeEntrar();
+    }
+}
+
+function podeEntrar(){
+    document.getElementById('PermissaoDeEntrada').innerText = 'Voce pode entrar!'
+}
+
+function NAOpodeEntrar(){
+    document.getElementById('PermissaoDeEntrada').innerText = 'Voce NAO pode entrar!'
+}
+
+
+/**************************************************************************************/
